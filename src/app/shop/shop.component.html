@@ -1,0 +1,10 @@
+<ng-container *ngFor="let item of product">
+<div class="card" style="width: 18rem;">
+    <img src="{{item.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">{{item.price}}</p>
+      <a class="btn btn-primary" (click)="addtocart(item)">Go somewhere</a>
+    </div>
+  </div>
+</ng-container>

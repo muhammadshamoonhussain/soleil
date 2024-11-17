@@ -1,0 +1,73 @@
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li{
+    margin-left: 56px;
+    list-style: none;
+    position: relative;
+    left: -6%;
+
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: roc-grotesk, sans-serif;
+    color: #232323;
+    position: relative;
+    top: -15px;
+}
+
+.menu li a::before {
+    content: '';
+    background: black;
+    position: absolute;
+    top: 30px;
+    left: -2px;
+    height: 1px;
+    width: 0px;
+    transform-origin: right;
+    transition: all .1s ease-in-out;  /* Faster transition */
+}
+
+.menu li a:hover::before {
+   width: 100%; 
+   transform-origin: left;
+}
+
+.ri-menu-line{
+    position: relative;
+    font-size: 2.5rem;
+    top: 29px;
+    left: 1%;
+    cursor: pointer;
+    visibility: hidden;
+}
+.ri-shopping-bag-3-fill{
+    position: relative;
+    font-size: 2rem;
+    margin-left: auto;
+    left: -2%;
+    top: -25px;
+}
+.ri-close-circle-line{
+    font-size: 2.5rem;
+    visibility: hidden;
+}
+hr{
+    position: relative;
+    top: -22px;
+    margin: 0;
+    
+}
+h1{
+  position: relative;
+  left: 44%;
+  top: -28px;
+  font-family: roc-grotesk, sans-serif;
+}
